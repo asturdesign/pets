@@ -1,50 +1,135 @@
-.preview_data {
-    overflow: hidden;
+@import url(http://fonts.googleapis.com/css?family=Schoolbell);
+
+body {
+    background: url('../images/cork-bg.png') repeat left top;
 }
 
-.preview_data span {
+.span3.stipso_item {
+    min-height: 440px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container_item {
+    background: url('../images/breed-bg.png') no-repeat left top;
+    width: 100%;
+    height: 229px;
+}
+
+.container_item p {
+    margin: 0;
+    padding: 8px 0 0 10px;
+    text-align: center;
+}
+
+.decoration {
+    background: url('../images/decoration.png') no-repeat;
+    height: 220px;
+    width: 90px;
+    display: block;
+    position: absolute;
+    top: 1em;
+    left: 46%;
+}
+
+.preview_chart {
+    background: url('../images/post-it.png') no-repeat left top;
+    width: 80%;
+    min-height: 197px;
+    position: absolute;
+    top: 48%;
+    left: 1%;
+    z-index: -1;
+    padding: 1em 2em 1em 1em;
+    font-family: 'Schoolbell', Georgia, cursive;
+    max-width: 457px;
+}
+
+.preview_chart h2 {
+    font-size: 19px;
+    line-height: 23px;
+    margin-top: 10px;
+}
+
+.preview_item span {
     display: block;
     float: left;
-    width: 10%;
-    padding-left: .4em;
+    width: 24%;
+    padding: 0 7px 0 10px;
     font-weight: bold;
+    text-align: right;
+    font-size: 0.9em;
+    color: #8C841F;
 }
 
 .progress {
     margin-top: 1em;
     margin-bottom: 5px;
+    height: 12px;
 }
 
-.preview_data .preview_percentage {
+.preview_item .preview_percentage {
     float: right;
     padding: 10px 0 0 10px;
 }
 
-h2 {
-    font-size: 16px;
-    line-height: 36px;
+.page-header h1 {
+    text-transform: uppercase;
+    color: #fff;
 }
 
 .page-header {
-   padding: 60px 0;
-   margin-bottom: 30px;     
+    padding-bottom: 36px;
+    border-bottom: none;
+    margin: 75px 0 0 0 ;
+    overflow: hidden;
 }
 
 .page-header h1 {
+  text-shadow: 2px 2px 4px black;
   margin-bottom: 0;
   font-size: 2.9em;
   line-height: 1.6;
   letter-spacing: -1px;
-  color: inherit;
 }
 
 .page-header p {
   font-size: 1.3em;
   font-weight: 200;
   line-height: 27px;
-  color: inherit;
+}
+
+#social_icons {
+    margin: 0;
+    list-style-type: none;
+}
+
+#social_icons li {
+    margin-bottom: .5em;
+}
+
+#social_icons a {
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
 }
 
 p {
     margin: 0 0 9px;
+}
+
+
+#survey .container_item {
+    background: url('../images/survey-fullwidth-bg.png') repeat-x left top;    
+}
+
+/*#jack_russell .container_item p {
+    text-align: left;
+    padding: 8px 0 0 0;
+}*/
+
+.ie7 .preview_chart h2,
+.ie8 .preview_chart h2,
+.ie6 .preview_chart h2 {
+   margin: 1.4em 0 .3em 0;
 }
