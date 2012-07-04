@@ -123,6 +123,54 @@ p {
     background: url('../images/survey-fullwidth-bg.png') repeat-x left top;    
 }
 
+#stipso_box {
+    background: url('../images/middle_separator.png') repeat-y center, url('../images/blur.png') no-repeat center,url('../images/bg_floating-box.png') repeat left top;
+    width: 450px;
+    border-radius: 1px;
+    box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);  
+    margin: 3em auto;
+    border-radius: 6px;
+}
+
+.stipso_question {
+    width: 41%;
+    float: left;
+    background: url('../images/black_transparency.png') repeat left top;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.stipso_question p {
+    background: url('../images/black_transparency.png') repeat left top;
+    color: #666;
+    border-radius: 50px;    
+    font-weight: bold;
+    font-size: .9em;
+    padding: .2em;
+}
+
+.stipso_question.last_question {
+    float: right;
+}
+
+.stipso_row {
+    padding: 1em;
+    border-bottom: 4px solid rgba(0,0,0,0.4);
+}
+
+.stipso_row.last_row {
+    border-bottom: none;
+}
+
+.stipso_question h2 {
+    color: white;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 0px black;
+    line-height: 1.3em;
+}
+
+
 /*#jack_russell .container_item p {
     text-align: left;
     padding: 8px 0 0 0;
@@ -133,3 +181,19 @@ p {
 .ie6 .preview_chart h2 {
    margin: 1.4em 0 .3em 0;
 }
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
+   j.mp/bestclearfix */
+
+.clearfix:before, .clearfix:after {
+    content: "\0020"; 
+    display: block; 
+    height: 0; 
+    overflow: hidden;
+}
+
+.clearfix:after { clear: both; }
+
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+
+.clearfix { zoom: 1; }
