@@ -124,12 +124,50 @@ p {
 }
 
 #stipso_box {
-    background: url('../images/middle_separator.png') repeat-y center, url('../images/blur.png') no-repeat center,url('../images/bg_floating-box.png') repeat left top;
-    width: 450px;
+  position: relative;
+  margin: 3em auto 8em; /* SOMETHING TO DELETE */
+  width: 450px;
+}
+
+#stipso_content {
+    background: url('../images/middle_separator.png') repeat-y center, url('../images/blur.png') no-repeat center, url('../images/bg_floating-box.png') repeat left top;
     border-radius: 1px;
     box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);  
-    margin: 3em auto;
     border-radius: 6px;
+}
+
+#stipso_arrow {
+  position: absolute;
+  height: 58px;
+  width: 39px;
+  top: 1em;
+  left: -37px;
+  background: url('../images/arrow_box.png') no-repeat 1px -52px;
+}
+
+.arrow_right #stipso_arrow {
+  background-position: -135px -52px;
+  right: -37px;
+  left: auto;
+}
+
+.arrow_top #stipso_arrow {
+  background-position: -65px 1px;
+  right: auto;
+  height: 39px;
+  width: 58px;
+  left: 58px;
+  top: -37px;
+}
+
+.arrow_bottom #stipso_arrow {
+  background-position: -51px -143px;
+  right: auto;
+  height: 39px;
+  width: 58px;
+  left: 58px;
+  top: auto;
+  bottom: -36px;
 }
 
 .stipso_question {
@@ -156,7 +194,7 @@ p {
 
 .stipso_row {
     padding: 1em;
-    border-bottom: 4px solid rgba(0,0,0,0.4);
+    border-bottom: 9px solid rgba(0,0,0,0.4);
 }
 
 .stipso_row.last_row {
@@ -168,6 +206,70 @@ p {
     font-size: 1.1em;
     text-shadow: 1px 1px 0px black;
     line-height: 1.3em;
+}
+
+/* LARGE QUESTION */
+
+.large_question #stipso_content {
+    background:  url('../images/blur.png') no-repeat center, url('../images/bg_floating-box.png') repeat left top;  
+}
+
+.large_question .stipso_row {
+  border-bottom: none;  
+  padding-bottom: 1em;
+}
+
+.large_question .stipso_question {
+  width: 94%;
+  background: none;
+} 
+
+.large_question .stipso_question h2 {
+  font-size: 1.8em;
+}
+
+.large_question .btn_submit input,
+.large_question .btn_submit button {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/*  END LARGE QUESTION */
+
+
+#rating_question ul {
+  list-style-type: none;
+  margin: 2em 0;
+  padding: 0;
+}
+
+#rating_question li {
+  display: inline-block;
+}
+
+#rating_question a {
+  color: white;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  float: left;
+  text-indent: -9999px;
+  background:  url('../images/bg_stars.png') no-repeat top left; 
+}
+
+#rating_question .empty_star a {
+  background-position: top right; 
+}
+
+.stipso_question input[type="text"] {
+  margin: 2em 0;
+}
+
+.input-prepend.input-append .add-on:first-child, .input-prepend.input-append .btn:first-child {
+  margin: -5px;
 }
 
 
