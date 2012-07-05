@@ -299,3 +299,19 @@ p {
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
 
 .clearfix { zoom: 1; }
+
+@media (min-width: 980px) {
+  .stipso_item .container_item{
+    background: url(../images/breed-fullwidth-bg.png) repeat-x;
+  }
+  .stipso_item .preview_chart {
+        background: url(../images/post-fullwidth-it.png) no-repeat;
+  }
+}
+
+.stipso_item .container_item{
+  background: url(../images/breed-fullwidth-bg.png) repeat-x;
+}
+.stipso_item .preview_chart {
+      background: url(../images/post-fullwidth-it.png) no-repeat;
+}
