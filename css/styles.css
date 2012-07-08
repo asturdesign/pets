@@ -143,7 +143,7 @@ p {
 }
 
 #stipso_content {
-    background: url('../images/middle_separator.png') repeat-y center, url('../images/blur.png') no-repeat center, url('../images/bg_floating-box.png') repeat left top;
+    background: url('../images/blur.png') no-repeat center, url('../images/bg_floating-box.png') repeat left top;
     border-radius: 1px;
     box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);  
     border-radius: 6px;
@@ -184,15 +184,16 @@ p {
 }
 
 .stipso_question {
-    width: 41%;
     float: left;
+    width: 43.6%;
     background: url('../images/black_transparency.png') repeat left top;
     padding: 1em;
     text-align: center;
-    border-radius: 5px;
+    min-height: 14em;
+   border-bottom: 5px solid #333; 
 }
 
-.stipso_question p {
+.stipso_question .number_answers {
     background: url('../images/black_transparency.png') repeat left top;
     color: #666;
     border-radius: 50px;    
@@ -201,17 +202,25 @@ p {
     padding: .2em;
 }
 
+.stipso_question .btn_submit {
+    background: none;
+}
+
 .stipso_question.last_question {
     float: right;
 }
 
+.stipso_row.last_row .stipso_question {
+   border-bottom: none;
+}
+
 .stipso_row {
-    padding: 1em;
-    border-bottom: 9px solid rgba(0,0,0,0.4);
+    padding: 1em 1em 0 1em;
 }
 
 .stipso_row.last_row {
     border-bottom: none;
+    padding: 0em 1em 1em 1em;
 }
 
 .stipso_question h2 {
@@ -221,6 +230,47 @@ p {
     line-height: 1.3em;
 }
 
+.btn {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.stipso_badge {
+    float: right;
+    margin-right: 1em;
+    opacity: .7;
+}
+
+.stipso_badge:hover {
+    opacity: 1;
+}
+
+#confirm_data {
+    font-size: 1.4em;
+    margin: 2em 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+    color: #ddd;
+    line-height: 1.2em;
+}
+
+#confirm_data .user_contribution {
+    font-size: 2em;
+    color: #EEEB8E;
+}
+
+#confirm_data .btn_submit {
+    margin: 1.5em 0 0 0;
+}
+
+.reenter_data a {
+    font-size: .8em;
+    margin: .4em 0 0 0;
+    color: #49AFCD;
+    display: block;
+}
+
 /* LARGE QUESTION */
 
 .large_question #stipso_content {
@@ -228,13 +278,14 @@ p {
 }
 
 .large_question .stipso_row {
-  border-bottom: none;  
+  border-bottom: none;
   padding-bottom: 1em;
 }
 
 .large_question .stipso_question {
   width: 94%;
   background: none;
+  border-bottom: none;
 } 
 
 .large_question .stipso_question h2 {
@@ -274,6 +325,10 @@ p {
 }
 
 #rating_question .empty_star a {
+  background-position: top center; 
+}
+
+#rating_question .half_star a {
   background-position: top right; 
 }
 
@@ -285,6 +340,67 @@ p {
   margin: -5px;
 }
 
+#stipso_close {
+    position: absolute;
+    top: -2.4em;
+    right: 0;
+    opacity: .6;
+}
+
+#stipso_close:hover {
+    opacity: 1;
+}
+
+#stipso_thumbs {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 2em 0;
+    padding: 0;
+}
+
+#stipso_thumbs li {
+    display: inline;
+}
+
+#stipso_thumbs a {
+  background: url("../images/bg_thumbs.png") no-repeat 0 0;
+  width: 73px;
+  display: inline-block;
+  height: 73px;
+  text-indent: -9999px;
+}
+
+.large_question #thumb_yes a {
+    background-position: top left;    
+}
+
+.large_question #thumb_no a {
+    background-position: top right;
+}
+
+.large_question #thumb_yes :hover {
+    background-position: bottom left;    
+}
+
+.large_question #thumb_no :hover {
+    background-position: bottom right;
+}
+
+.go_back {
+    margin: 0;
+}
+
+.go_back a {
+    display: block;
+    background: url('../images/go_back.png') no-repeat left bottom;
+    width: 67px;
+    height: 24px;
+    text-indent: -999px;
+}
+
+.go_back :hover {
+    background-position: left top;
+}
 
 /*#jack_russell .container_item p {
     text-align: left;
