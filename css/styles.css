@@ -147,6 +147,19 @@ p {
     border-radius: 1px;
     box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);  
     border-radius: 6px;
+    min-height: 447px;
+}
+
+#questionOne {
+    display: none;
+}
+
+.quickflip-wrapper {
+    position: relative;
+}
+
+.wrapperquestion {
+    position: absolute;
 }
 
 #stipso_arrow {
@@ -273,7 +286,8 @@ p {
 
 /* LARGE QUESTION */
 
-.large_question #stipso_content {
+.large_question #stipso_content,
+.wrapperquestion {
     background:  url('../images/blur.png') no-repeat center, url('../images/bg_floating-box.png') repeat left top;  
 }
 
@@ -400,6 +414,11 @@ p {
 
 .go_back :hover {
     background-position: left top;
+}
+
+
+#first_question {
+    
 }
 
 /*#jack_russell .container_item p {
