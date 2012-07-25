@@ -44,13 +44,13 @@ body {
 
 .preview_chart {
     background: url('../images/post-it.png') no-repeat left top;
-    width: 80%;
+    width: 71%;
     min-height: 197px;
     position: absolute;
     top: 48%;
     left: 1%;
     z-index: -1;
-    padding: 1em 2em 1em 1.4em;
+    padding: 1em 3.8em 1em 1.4em;
     font-family: 'GoodDogRegular', Georgia, cursive;
     max-width: 457px;
 }
@@ -78,10 +78,10 @@ body {
     height: 12px;
 }
 
-.preview_item .preview_percentage {
+/*.preview_item .preview_percentage {
     float: right;
     padding: 10px 0 0 10px;
-}
+}*/
 
 .page-header h1 {
     text-transform: uppercase;
@@ -243,7 +243,7 @@ p {
     line-height: 1.3em;
 }
 
-.btn {
+#stipso_box .btn {
     text-transform: uppercase;
     font-size: 11px;
     font-weight: bold;

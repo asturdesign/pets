@@ -22,7 +22,9 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
 
+    
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
@@ -66,32 +68,46 @@
    <div class="container-fluid" id="stipso_chart">
      <div class="row-fluid">
           <div class="page-header">
-      <div class="span9">
+      <div class="span10">
+             <h1>Take part & bark for your breed!</h1>                 
+      </div>
+         <div class="span2">
+         
+         <button class="btn btn-warning sharethis_btn" data-toggle="collapse" data-target="#sharethis">
+           Share this!
+         </button>
+          
+         <div id="sharethis" class="collapse">
+         <ul id="social_icons">
+             <li><span class='st_facebook_hcount' displayText='Facebook'></span></li>
+             <li><span class='st_twitter_hcount' displayText='Tweet'></span></li>
+             <li><span class='st_linkedin_hcount' displayText='LinkedIn'></span></li>
+             <li><g:plusone size="small"></g:plusone>          </li>
+             <li><span class='st_pinterest_hcount' displayText='Pinterest'></span></li>
+         </ul>    
+         
+         <a data-toggle="modal" href="#embed" class="btn embed_btn btn-success">Embed</a>
 
-            <h1>Take part & bark for your breed!</h1>                 
-        </div>
-         <div class="span3">
-             <ul id="social_icons">
-                 <li>
-                     <a href="">
-                         <img src="images/facebook.png" alt="Share on Facebook"> Share this on Facebook
-                     </a>    
-                 </li>
-                <li>
-                    <a href="">
-                        <img src="images/twitter.png" alt="Share on Facebook"> Share this on Twitter
-                    </a>    
-                </li>
-                <li>
-                    <a href="">
-                        <img src="images/pinterest.png" alt="Share on Facebook"> Share this on Pinterest
-                    </a>    
-                </li>                               
-             </ul>
-        </div>               
-    </div>       
-    </div>          
-      
+         <div class="modal hide fade" id="embed" style="display: none">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">×</button>
+             <h3>Embed this</h3>
+           </div>
+           <div class="modal-body">
+                    <p>Do you want to embed this infographic on your site?</p>
+                    <textarea class="yt-uix-form-textarea share-embed-code">&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/Ao9M-aKYAZM" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</textarea>
+         </div>
+           <div class="modal-footer">
+             <a href="#" class="btn" data-dismiss="modal">Close</a>
+            <button class="btn btn-info">Copy code</button>
+           </div>
+         </div>
+          </div>
+     
+         </div>               
+  </div>          
+ 
+     
       <div class="row-fluid">
 
                 <div class="span3 stipso_item" id="german_shepherd">
@@ -104,37 +120,105 @@
                       </a>
                     </p>  
                     </div>
-                    
+                  
+<style type="text/css">
+
+/*ADD*/
+.preview_item i {
+    position: absolute;
+    opacity: .2;
+}
+
+.preview_item {
+    position: relative;
+}
+
+.preview_item .icon-minus {
+    left: 33%;
+}
+
+.preview_item .icon-plus {
+    left: 103%;
+    top: 0;
+}
+
+#embed textarea {
+    width: 98%;
+}
+
+.embed_btn {
+    font-size: 12px;
+    width: 75%;
+    margin: 0 1em 1em 1em;
+}
+
+.sharethis_btn {
+    width: 100%;
+    padding: 13px;
+    font-weight: bold;
+}
+
+#sharethis {
+    background: white;
+    padding: 0;
+}
+
+#sharethis ul {
+    margin: 1em;
+}
+
+/*REPLACE*/
+.preview_chart {
+   padding: 1em 2em 1em 1.4em;
+   width: 78%;
+}
+
+.preview_item span {
+    color: #A7A27D;
+    padding: 0 28px 0 10px;
+}
+
+#stipso_box .btn {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+                  </style>
                      <div class="preview_chart"> 
                           <h2>German Shepherd</h2>                                     
     
                                 <div class="preview_item">
                                     <span>Bed</span>
+                                    <i class="icon-minus"></i>
                                         <div class="progress progress-info ">
                                             <div class="bar" style="width: 12%;"></div>
                                         </div>
-                                     <!--   <span class="preview_percentage">21%</span>-->
+                                    <i class="icon-plus"></i>                                        
                                 </div>        
                                 <div class="preview_item">
                                     <span>Walks</span>
+                                      <i class="icon-minus"></i>                                          
                                         <div class="progress progress-danger">
                                             <div class="bar" style="width: 26%;"></div>
                                         </div>
-                                    <!-- <span class="preview_percentage">21%</span>-->
+                                    <i class="icon-plus"></i>                                         
                                 </div>        
                                 <div class="preview_item">
                                     <span>Costs</span>
+                                    <i class="icon-minus"></i>                                    
                                         <div class="progress progress-success">
                                             <div class="bar" style="width: 32%;"></div>
                                         </div>
-                                         <!--<span class="preview_percentage">11%</span>-->
+                                    <i class="icon-plus"></i>                                         
                                 </div>        
                                 <div class="preview_item">
                                     <span>Kids friendly</span>
+                                    <i class="icon-minus"></i>
                                         <div class="progress progress-warning">
                                             <div class="bar" style="width: 80%;"></div>
                                         </div>
-                                    <!--<span class="preview_percentage">75%</span>-->
+                                    <i class="icon-plus"></i>                                         
                                 </div>        
     
                      </div>                                     
@@ -313,8 +397,30 @@
     <script src="js/bootstrap-collapse.js"></script>    
     <script src="js/bootstrap-dropdown.js"></script>
     <script src="js/bootstrap-button.js"></script>    
-    <script src="js/application.js"></script>
-    
+        
+        <script type="text/javascript">
+        
+        jQuery('.collapse').collapse({
+          toggle: false
+        })
+        
+        jQuery('.sharethis_btn').click(){
+            jQuery('#embed').modal('toggle');
+        }
+        </script>
+        
+        <script type="text/javascript">
+          window.___gcfg = {lang: 'en-GB'};
+        
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+        <script type="text/javascript">stLight.options({publisher: "ur-1d012deb-e8b0-dc6b-8ebe-79ca3d345396"}); </script>
+        
   </body>
 </html>
-
